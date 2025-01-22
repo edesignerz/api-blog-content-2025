@@ -1,0 +1,75 @@
+/* File: css/admin-style.css */
+
+/* Existing styles */
+/* Add your existing CSS styles here */
+
+/* --- Updated Styles for Real-Time Progress Reporting --- */
+
+/* Style for the progress message */
+#progress_message {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for the progress bar container */
+#progress_bar_container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+}
+
+/* Style for the progress bar itself */
+#progress_bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Style for the post status list */
+#post_status_list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#post_status_list li {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Style for CodeMirror editor */
+.CodeMirror {
+    border: 1px solid #ccc;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    #progress_bar_container {
+        height: 20px;
+    }
+
+    #progress_message {
+        font-size: 14px;
+    }
+
+    #post_status_list li {
+        font-size: 12px;
+    }
+
+    /* Adjust CodeMirror to be responsive */
+    .CodeMirror {
+        width: 100% !important;
+    }
+}
+
+/* --- End of Updated Styles --- */
